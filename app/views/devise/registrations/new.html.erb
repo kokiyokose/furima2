@@ -1,8 +1,6 @@
 <%= render "shared/second-header"%>
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
-※ 要注意！　model,urlを入力しないと、name属性を修正しても、新規登録はできません
-
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
@@ -13,7 +11,6 @@
 
   <%= render 'shared/error_messages', model: f.object %>
   <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
- ※コメントアウトを外して、出力されるように　= を追加しましょう
 
   <div class="form-group">
     <div class='form-text-wrap'>
